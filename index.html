@@ -3,8 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+   	<!-- 引入的angularjs及相关模块包 -->
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
 </head>
-<body>
-    
+<body ng-app="app" ng-controller="appController">
+    <div>这是yoyo配置的gulp工作目录</div>
+    <a href="#/hot">路由选择hot,跳转</a>
+    <div ng-view></div>
+	
+	<!-- 自己写的js包 -->
+	<script type="text/javascript" src="app/app.js"></script>
+	<script type="text/javascript" src="app/route.js"></script>
+
+	<script type="text/javascript" src="views/hot/controller.js"></script>
+
 </body>
 </html>
